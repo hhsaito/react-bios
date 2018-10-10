@@ -1,0 +1,240 @@
+.landing-page .hero .hero-image {
+    height: 418px;
+}
+
+.landing-page .photo-grid article {
+    margin-right: 0;
+}
+
+.landing-page .photo-grid a img:hover {
+    opacity: 1;
+}
+
+.landing-page .photo-grid a img[data-hover=""]:hover {
+    opacity: 0.5;
+}
+
+.gutter-sizer {
+    width: 1.78571%;
+}
+
+.section-top p input[type="text"] {
+    font-size: 20px;
+    text-align: center;
+    background: url("/images/bios/search-dkgrey.svg") no-repeat right top;
+    background-size: 20px 20px;
+    opacity: 0.9;
+}
+
+.section-top p input[type="text"]::placeholder {
+    color: #696969;
+    text-align: center;
+}
+
+.landing-page .content p.subhead {
+    width: 91%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.photo-box h4,
+.photo-box h4+p {
+    text-align: center;
+}
+
+.photo-box .biography {
+    display: none;
+}
+
+.content .photo-box> :first-child {
+    border-bottom: 0;
+}
+
+.quicksearch {
+    width: 50%;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+}
+
+#bio-info {
+    height: 1em;
+    margin: 1rem auto;
+    color: #716c6b;
+}
+
+#modal-backdrop {
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 9998;
+    opacity: 0;
+    visibility: hidden;
+    backface-visibility: hidden;
+    transition: all .8s;
+}
+
+#modal-backdrop.opened {
+    opacity: 1;
+    visibility: visible;
+}
+
+#modal-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+
+    max-width: 75%;
+    max-height: 90vh;
+    background-color: #fff;
+    box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.2);
+    border-radius: 9px;
+    display: table;
+    font-size: 1rem;
+    line-height: 1.5;
+    transition: all .5s .2s;
+    overflow: scroll;
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(.25);
+}
+
+#modal-box.show-box {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+#modal-box #top-close {
+    position: absolute;
+    left: -400%;
+}
+
+.biography {
+    overflow: scroll;
+    padding: 2rem 2rem 1rem;
+}
+
+.biography h2 {
+    font: 46px/1.2em "Campton Extra Light", "Courier New", sans-serif;
+    margin-bottom: 0;
+}
+
+.biography h2+p {
+    /* font-size: 1.2rem;
+    margin-top: 0; */
+    font-size: 2.5rem;
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+}
+
+.biography ul {
+    margin-left: 1em;
+}
+
+#ken-bio {
+    max-width: 95%;
+    max-height: 90vh;
+    font-size: .9rem;
+    line-height: 1.2;
+}
+
+#ken-bio img {
+    max-width: 300px;
+}
+
+.popup__close {
+    clear: left;
+    text-align: center;
+    margin-top: 1.5em;
+}
+
+.popup__close a:link,
+.popup__close a:visited {
+    color: #fff;
+    font-size: 3rem;
+    text-decoration: none;
+    display: inline-block;
+    transition: all .2s;
+    line-height: 3.7rem;
+    height: 4rem;
+    width: 4rem;
+    border-radius: 50%;
+    background-color: #4e2a84;
+}
+
+.popup__close a:hover {
+    color: #e4e0ee;
+}
+
+.biography img {
+    float: left;
+    margin: 0 2rem 2rem 0;
+}
+
+@media screen and (max-width: 1500px) {
+    #modal-box {
+        max-width: 95%;
+        max-height: 90vh;
+        /* font-size: .9rem; */
+        font-size: 1.5rem;
+        line-height: 1.2;
+    }
+    .biography img {
+        width: 25%;
+    }
+}
+
+@media screen and (max-width: 1200px) {}
+
+@media screen and (max-width: 768px) {
+    .landing-page .photo-grid article {
+        max-width: 48.5%;
+    }
+    .landing-page .photo-grid article img {
+        width: 100%;
+    }
+    .gutter-sizer {
+        width: 3%;
+    }
+    .landing-page .content p.subhead {
+        width: initial;
+    }
+    #modal-box {
+        position: relative;
+        top: 0%;
+        left: 0%;
+        line-height: 1.5em;
+        transform: initial;
+        height: 100vh;
+        width: 100%;
+        max-height: 100vh;
+        max-width: 100%;
+        box-shadow: none;
+        border-radius: 0;
+        display: block;
+        overflow: scroll;
+        opacity: 1;
+    }
+    #modal-box.show-box {
+        transform: none;
+    }
+    .biography h5 {
+        line-height: 1em;
+    }
+    .biography h5+p {
+        margin-top: 0.5em;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .gutter-sizer {
+        width: 0;
+    }
+    .landing-page .photo-grid article {
+        width: 100%;
+    }
+}
