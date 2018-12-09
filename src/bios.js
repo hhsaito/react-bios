@@ -11,17 +11,37 @@ export const bios = [
   },
   {
     id: 3,
-    name: 'Donna',
-    title: 'Asst. VP',
+    name: 'Harry',
+    title: 'Web Developer',
   },
   {
     id: 4,
-    name: 'Erica',
-    title: 'Marketing Manager',
+    name: 'Henry',
+    title: 'Senior Graphic Designer',
   },
   {
     id: 5,
-    name: 'Harry',
-    title: 'Web Developer',
+    name: 'Jacob',
+    title: 'Environmental Design Manager',
+  },
+  {
+    id: 6,
+    name: 'Juan',
+    title: 'Digital Desinger',
+  },
+  {
+    id: 7,
+    name: 'Karla',
+    title: 'Senior Program Administrator',
+  },
+  {
+    id: 8,
+    name: 'Megan',
+    title: 'Strategic Communications Manager',
+  },
+  {
+    id: 9,
+    name: 'Morgan',
+    title: 'Newsroom Coordinator',
   },
 ];

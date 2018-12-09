@@ -6,11 +6,10 @@ import './BioList.css';
 const BioList = ({ bios, clickArticleLink }) => {
     const biosArray = bios.map((user, i) => {
         return <BioArticle 
-            key={i} 
-            id={bios[i].id} 
+            key={bios[i].id} 
             name={bios[i].name} 
             title={bios[i].title}
-            clickArticleLink={() => clickArticleLink(bios[i].id)}
+            clickArticleLink={() => clickArticleLink(i)}
         />
     })
     return (
