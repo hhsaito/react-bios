@@ -1,11 +1,11 @@
 import React from 'react';
 
-const BioArticle = ({ name, title }) => {
+const BioArticle = ( props ) => {
     return (
         <article className='photo-box'>
-            <a href="#modal-backdrop"><img src={`/images/bios/${name}.jpg`} alt={name} /></a>
-            <h2>{name}</h2>
-            <p>{title}</p>
+            <a href="#modal-backdrop" onClick={props.clickArticleLink}><img src={`/images/bios/thumbnails/${props.name}-TH.jpg`} alt={props.name} /></a> 
+            <h2>{props.name}</h2>
+            <p>{props.title}</p>
         </article>
     );
 }
