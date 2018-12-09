@@ -10,7 +10,7 @@ const Modal = ( props ) => {
                     <div className="biography">
                         <h2 id="dialog_title">{props.modalBio.name}</h2>
                         <p>{props.modalBio.title}</p>
-                        <img alt={props.modalBio.name} src={`/images/bios/${props.name}.jpg`} />
+                        <img alt={props.modalBio.name} src={`/images/bios/${props.modalBio.name}.jpg`} />
                         <p className="popup__close"><a href="#close" onClick={props.clickClosed} aria-label="Close biography">×</a></p>
                     </div>
                 </div>
