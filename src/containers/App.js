@@ -1,7 +1,11 @@
 import React, { Component } from 'react';
 import SearchBox from '../components/SearchBox';
 import BioList from '../components/BioList';
+import TopSection from '../components/static/topSection';
 import Modal from '../components/Modal';
+import Navigation from '../components/navigation/Navigation';
+import Footer from '../components/navigation/footer/Footer';
+import Aux from '../hoc/aux/Aux';
 import { bios } from '../bios';
 import './App.css';
 
@@ -20,7 +24,7 @@ class App extends Component {
 
   componentDidMount() {
     this.setState({ bios: bios })
-    console.log(this.state)
+    // console.log(this.state)
   }
 
   onSearchChange = (event) => {
@@ -35,7 +39,7 @@ class App extends Component {
     this.setState( { showModal: !doesShow } );
   }
   closeModal = () => {
-    console.log('modal closed');
+    // console.log('modal closed');
     const doesShow = this.state.showModal;
     this.setState( { showModal: !doesShow } );
   }
@@ -46,23 +50,40 @@ class App extends Component {
     })
 
     return !bios.length ?
-    <h1>Searching ...</h1> :
     (
-      <div>
-        <div className="landing-page">
-          <div className="content">
-            <SearchBox searchChange={this.onSearchChange} />
-            <BioList 
-              bios={filterBios}
-              clickArticleLink={this.openModal} 
-            />
+      <Aux>
+        <Navigation />
+        <main>
+          <TopSection />
+          <h1 style={{textAlign: 'center'}}>Searching ...</h1>
+        </main>
+        <Footer />
+      </Aux>
+    )
+     :
+    (
+      <Aux>
+        <Navigation />
+        <main>
+          <TopSection />
+          <div>
+            <div className="landing-page">
+              <div className="content">
+                <SearchBox searchChange={this.onSearchChange} />
+                <BioList 
+                  bios={filterBios}
+                  clickArticleLink={this.openModal} 
+                />
+              </div>
+            </div>
           </div>
-        </div>
+        </main>
+        <Footer />
         <Modal 
           modalBio={modalBio}
           showModal={showModal}
           clickClosed={() => this.closeModal()} />
-      </div>
+      </Aux>
     );
   }
 }

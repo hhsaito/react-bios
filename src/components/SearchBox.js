@@ -15,7 +15,7 @@ const SearchBox = ( { searchfield, searchChange } ) => {
             </p>
             <div aria-live="polite" id="bio-info" role="status" aria-relevant="additions removals"></div>
         </div>
-    )
-}
+    );
+};
 
 export default SearchBox;

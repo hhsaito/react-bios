@@ -1,9 +1,236 @@
-.photo-grid:after {
-  content: "";
-  display: table;
-  clear: both;
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, main, section {
+    display: block;
+  }
+
+/* line 80, /Library/WebServer/Documents/dept-v2/scss/base/_core.scss */
+.contain-1120 {
+  margin: 0 auto;
+  max-width: 1120px;
+  box-sizing: content-box;
 }
-.photo-grid {
+
+/* line 137, /Library/WebServer/Documents/dept-v2/scss/base/_core.scss */
+img {
+  display: inline-block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* line 142, /Library/WebServer/Documents/dept-v2/scss/base/_core.scss */
+/* img .outline {
+  border: 1px solid #ccc;
+} */
+
+@media screen and (max-width: 1140px) {
+  /* line 247, /Library/WebServer/Documents/dept-v2/scss/base/_core.scss */
+  #main-content .contain-1120 {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+}
+
+/* line 4, /Library/WebServer/Documents/dept-v2/scss/base/_typography.scss */
+.content h2, .biography h2 {
+  font: 46px/1.2em "Campton Extra Light", "Courier New", sans-serif;
+  color: #4e2a84;
+  margin-bottom: 1rem;
+}
+
+/* line 10, /Library/WebServer/Documents/dept-v2/scss/base/_typography.scss */
+.content h3, .biography  h3 {
+  font: 30px/1.2em "Campton Bold", Impact, sans-serif;
+  color: #4e2a84;
+  margin-bottom: .5rem;
+}
+
+
+/* line 24, /Library/WebServer/Documents/dept-v2/scss/base/_typography.scss */
+.content h4, .biography h4 {
+  font: 26px/1.2em "Akkurat Pro Regular", Arial, sans-serif;
+  color: #716c6b;
+  margin-bottom: .5rem;
+}
+
+/* line 60, /Library/WebServer/Documents/dept-v2/scss/base/_typography.scss */
+.content a, .content-full a {
+  font-family: "Akkurat Pro Bold", "Arial Black", sans-serif;
+  color: #4e2a84;
+  text-decoration: none;
+  border-bottom: 1px dashed #b6acd1;
+  padding-bottom: .08rem;
+}
+
+/* line 67, /Library/WebServer/Documents/dept-v2/scss/base/_typography.scss */
+.content a:hover, .content-full a:hover {
+  border-bottom: 1px solid #4e2a84;
+}
+
+/* line 71, /Library/WebServer/Documents/dept-v2/scss/base/_typography.scss */
+.content a img, .content-full a img {
+  border: 0;
+}
+
+/* line 76, /Library/WebServer/Documents/dept-v2/scss/base/_typography.scss */
+.content a em, .content em a, .content a i, .content i a, .content-full a em, .content-full em a, .content-full a i, .content-full i a {
+  font-family: "Akkurat Pro Bold Italic", "Arial Black", sans-serif;
+}
+
+/* line 80, /Library/WebServer/Documents/dept-v2/scss/base/_typography.scss */
+.content strong, .content b, .content-full strong, .content-full b {
+  font-family: "Akkurat Pro Bold", "Arial Black", sans-serif;
+  font-weight: normal;
+}
+
+/* line 85, /Library/WebServer/Documents/dept-v2/scss/base/_typography.scss */
+.content em, .content i, .content-full em, .content-full i {
+  font-family: "Akkurat Pro Italic", Arial, sans-serif;
+  font-style: normal;
+}
+
+/* line 90, /Library/WebServer/Documents/dept-v2/scss/base/_typography.scss */
+.content strong em, .content em strong, .content strong i, .content i strong, .content b i, .content i b, .content-full strong em, .content-full em strong, .content-full strong i, .content-full i strong, .content-full b i, .content-full i b {
+  font-family: "Akkurat Pro Bold Italic", "Arial Black", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+}
+
+/* line 285, /Library/WebServer/Documents/dept-v2/scss/base/_typography.scss */
+.align-text-center {
+  text-align: center;
+}
+
+/* line 289, /Library/WebServer/Documents/dept-v2/scss/base/_typography.scss */
+.align-image-left {
+  float: left;
+  margin: .5rem 1.5rem .5rem 0;
+}
+
+/* line 294, /Library/WebServer/Documents/dept-v2/scss/base/_typography.scss */
+.align-image-right {
+  float: right;
+  margin: .5rem 0 .5rem 1.5rem;
+}
+
+/* line 299, /Library/WebServer/Documents/dept-v2/scss/base/_typography.scss */
+.align-image-center {
+  margin: 0 auto;
+  display: block;
+}
+
+@media screen and (max-width: 768px) {
+  /* line 306, /Library/WebServer/Documents/dept-v2/scss/base/_typography.scss */
+  .align-image-left, .align-image-right, .align-image-center {
+    float: none;
+    margin: 0 0 1rem 0;
+    display: block;
+  }
+}
+
+@font-face {
+  font-family: "Akkurat Pro Regular";
+  src: url("../../containers/AkkuratProRegular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Campton Extra Light";
+  src: url("../../containers/CamptonExtraLight.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* line 5, /Library/WebServer/Documents/dept-v2/scss/page-types/landing-page/_main.scss */
+.landing-page section, .landing-page .section {
+  margin-bottom: 5rem;
+}
+
+/* line 8, /Library/WebServer/Documents/dept-v2/scss/page-types/landing-page/_main.scss */
+.landing-page section.no-bottom-margin, .landing-page .section.no-bottom-margin {
+  margin-bottom: 0;
+}
+
+/* line 13, /Library/WebServer/Documents/dept-v2/scss/page-types/landing-page/_main.scss */
+.landing-page #back-to-top {
+  margin-bottom: 2rem;
+}
+
+/* line 17, /Library/WebServer/Documents/dept-v2/scss/page-types/landing-page/_main.scss */
+.landing-page #page {
+  margin: 0 auto;
+  max-width: 1440px;
+}
+
+/* line 24, /Library/WebServer/Documents/dept-v2/scss/page-types/landing-page/_main.scss */
+.landing-page .content {
+  font-size: 16px;
+  line-height: 1.7em;
+  width: 100%;
+}
+
+/* line 30, /Library/WebServer/Documents/dept-v2/scss/page-types/landing-page/_main.scss */
+.landing-page .content h3 {
+  font: 24px "Campton Extra Bold", Impact, sans-serif;
+  color: #4e2a84;
+  text-align: center;
+}
+
+/* line 48, /Library/WebServer/Documents/dept-v2/scss/page-types/landing-page/_main.scss */
+.landing-page .content p.subhead {
+  color: #4e2a84;
+  font: 46px/1.2em "Campton Extra Light", "Courier New", sans-serif;
+  margin-bottom: 1rem;
+}
+
+/* line 55, /Library/WebServer/Documents/dept-v2/scss/page-types/landing-page/_main.scss */
+.landing-page .content .section-top {
+  margin-bottom: 3rem;
+  text-align: center;
+  padding: 0 1rem;
+}
+
+/* line 60, /Library/WebServer/Documents/dept-v2/scss/page-types/landing-page/_main.scss */
+.landing-page .content .section-top h3 {
+  margin-bottom: 4rem;
+}
+
+/* line 63, /Library/WebServer/Documents/dept-v2/scss/page-types/landing-page/_main.scss */
+.landing-page .content .section-top h3 + p {
+  margin-top: -2rem;
+}
+
+@media screen and (max-width: 480px) {
+  /* line 72, /Library/WebServer/Documents/dept-v2/scss/page-types/landing-page/_main.scss */
+  .landing-page section, .landing-page .section {
+    margin-bottom: 2.5rem;
+  }
+  /* line 81, /Library/WebServer/Documents/dept-v2/scss/page-types/landing-page/_main.scss */
+  .landing-page .content .section-top h3, .landing-page .content .background-select h3, .landing-page .content .large-feature-wrap h3, .landing-page .content .in-page h3 {
+    font: 20px "Campton Extra Bold", Impact, sans-serif;
+    margin-bottom: 1rem;
+  }
+  /* line 85, /Library/WebServer/Documents/dept-v2/scss/page-types/landing-page/_main.scss */
+  .landing-page .content .section-top h3 + p, .landing-page .content .background-select h3 + p, .landing-page .content .large-feature-wrap h3 + p, .landing-page .content .in-page h3 + p {
+    margin-top: 0;
+  }
+  /* line 89, /Library/WebServer/Documents/dept-v2/scss/page-types/landing-page/_main.scss */
+  .landing-page .content .section-top h3:before, .landing-page .content .background-select h3:before, .landing-page .content .large-feature-wrap h3:before, .landing-page .content .in-page h3:before {
+    background: none;
+    padding: 0;
+  }
+  /* line 94, /Library/WebServer/Documents/dept-v2/scss/page-types/landing-page/_main.scss */
+  .landing-page .content .section-top h3:after, .landing-page .content .background-select h3:after, .landing-page .content .large-feature-wrap h3:after, .landing-page .content .in-page h3:after {
+    background: none;
+    padding: 0;
+  }
+  /* line 100, /Library/WebServer/Documents/dept-v2/scss/page-types/landing-page/_main.scss */
+  .landing-page .content .section-top p.subhead, .landing-page .content .background-select p.subhead, .landing-page .content .large-feature-wrap p.subhead, .landing-page .content .in-page p.subhead {
+    font-size: 28px;
+  }
+}
+
+/* line 5, /Library/WebServer/Documents/dept-v2/scss/page-types/landing-page/_photo-grid.scss */
+.landing-page .photo-grid {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
@@ -12,7 +239,9 @@
   flex-wrap: wrap;
   margin-top: 1.5rem;
 }
-.photo-grid article {
+
+/* line 15, /Library/WebServer/Documents/dept-v2/scss/page-types/landing-page/_photo-grid.scss */
+.landing-page .photo-grid article {
   width: 23.66071%;
   margin-right: 1.78571%;
   margin-bottom: 20px;
@@ -20,38 +249,45 @@
   line-height: 1.5rem;
 }
 
-.photo-grid article:nth-of-type(4n+4) {
+/* line 22, /Library/WebServer/Documents/dept-v2/scss/page-types/landing-page/_photo-grid.scss */
+.landing-page .photo-grid article:nth-of-type(4n+4) {
   margin-right: 0;
 }
-.photo-grid article h4 {
+
+/* line 26, /Library/WebServer/Documents/dept-v2/scss/page-types/landing-page/_photo-grid.scss */
+.landing-page .photo-grid article h4 {
   font: 16px "Akkurat Pro Bold", "Arial Black", sans-serif;
   color: #342f2e;
   margin: 1rem 0 0 0;
 }
-.photo-grid article h4 + p {
+
+/* line 32, /Library/WebServer/Documents/dept-v2/scss/page-types/landing-page/_photo-grid.scss */
+.landing-page .photo-grid article h4 + p {
   margin-top: .5rem;
 }
-.photo-grid article p.link {
+
+/* line 36, /Library/WebServer/Documents/dept-v2/scss/page-types/landing-page/_photo-grid.scss */
+.landing-page .photo-grid article p.link {
   font-family: "Akkurat Pro Bold", "Arial Black", sans-serif;
   text-transform: uppercase;
 }
-.photo-grid article p.link:after {
-  background: url("images/bios/arrow-right-dkpurple.svg") no-repeat 0.8em 3px/5px 8px;
-  padding-right: 3rem;
-  content: " ";
-}
+
 @media screen and (max-width: 768px) {
-  .photo-grid article {
+  /* line 52, /Library/WebServer/Documents/dept-v2/scss/page-types/landing-page/_photo-grid.scss */
+  .landing-page .photo-grid article {
     width: 48.5%;
     max-width: 265px;
     margin-right: 3%;
   }
-  .photo-grid article:nth-of-type(2n+2) {
+  /* line 57, /Library/WebServer/Documents/dept-v2/scss/page-types/landing-page/_photo-grid.scss */
+  .landing-page .photo-grid article:nth-of-type(2n+2) {
     margin-right: 0;
   }
 }
+
 @media screen and (max-width: 475px) {
-  .photo-grid article {
+  /* line 65, /Library/WebServer/Documents/dept-v2/scss/page-types/landing-page/_photo-grid.scss */
+  .landing-page .photo-grid article {
     width: 100%;
   }
 }
