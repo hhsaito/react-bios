@@ -9,7 +9,7 @@ const BioList = ({ bios, clickArticleLink }) => {
             key={bios[i].id} 
             name={bios[i].name} 
             title={bios[i].title}
-            clickArticleLink={() => clickArticleLink(i)}
+            clickArticleLink={() => clickArticleLink(bios[i].id)}
         />
     })
     return (

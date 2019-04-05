@@ -5,7 +5,7 @@ import linkedInLogo from '../../../assets/images/In-White-54px-TM.png';
 
 const footer = () => {
     return (
-        <footer>
+        <footer className="footer">
             <div id="social-links">
                 <p><a href="https://www.facebook.com/harry.saito"><img src={fbLogo} alt="facebook" /></a><a href="https://github.com/hhsaito"><img src={gitLogo} alt="Github" /></a><a href="https://www.linkedin.com/in/harrysaito/"><img src={linkedInLogo} alt="LinkedIn" /></a></p>
                 <p>&copy;2019 Harry Saito</p>

@@ -4,6 +4,7 @@ import BioList from '../components/BioList';
 import TopSection from '../components/static/topSection';
 import Modal from '../components/Modal';
 import Navigation from '../components/navigation/Navigation';
+import Breadcrumbs from '../components/navigation/Breadcrumbs';
 import Footer from '../components/navigation/footer/Footer';
 import Aux from '../hoc/aux/Aux';
 import { bios } from '../bios';
@@ -32,9 +33,12 @@ class App extends Component {
     // console.log(this);
   }
   
-  openModal = (index) => {
+  openModal = (id) => {
+    console.log('id?:', id);
     const persons = [...this.state.bios];
-    this.setState({modalBio: persons[index]});
+    const filterPerson = persons.find(person => person.id === id );
+    // console.log(filterPerson);
+    this.setState({modalBio: filterPerson});
     const doesShow = this.state.showModal;
     this.setState( { showModal: !doesShow } );
   }
@@ -53,6 +57,7 @@ class App extends Component {
     (
       <Aux>
         <Navigation />
+        <Breadcrumbs />
         <main>
           <TopSection />
           <h1 style={{textAlign: 'center'}}>Searching ...</h1>
@@ -64,6 +69,7 @@ class App extends Component {
     (
       <Aux>
         <Navigation />
+        <Breadcrumbs />
         <main>
           <TopSection />
           <div>
