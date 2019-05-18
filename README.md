@@ -1,7 +1,7 @@
 # react-bios
 Updating bios using React
 
-This is a React.js version of the JavaScript modal and is in the process of being built. Currently, the elements have been moved into components and the search has been moved into React.
+This is a React.js version of the JavaScript modal. Currently, the elements have been moved into components and the search has been moved into React.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
